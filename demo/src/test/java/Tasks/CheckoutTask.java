@@ -20,5 +20,8 @@ public class CheckoutTask {
     public void efetuarCheckout() {
         genericValidation.validationPages("Checkout: Your Information");
         checkPage.getInputFirstName().sendKeys("Teste");
+        checkPage.getInputLastName().sendKeys("Compras");
+        checkPage.getInputPostalCode().sendKeys("00000-001");
+        checkPage.getInputButtonContinue().click();
     }
 }
