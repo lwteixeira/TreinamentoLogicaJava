@@ -7,13 +7,14 @@ import org.openqa.selenium.WebDriver;
 
 import Framawork.Browse.DriverManager;
 import Framawork.Browse.TypeBrowser;
+import Framawork.Utils.FileOperation;
 import io.github.bonigarcia.wdm.webdriver.WebDriverBrowser;
 
 public class TestBase extends DriverManager{
 
     private static WebDriver driver;
     
-    private static String URL = "https://www.saucedemo.com/";
+    private static String URL = FileOperation.getProperties("url").getProperty("index");
     
     public static WebDriver getDriverManager () {
         driver = getDriver(TypeBrowser.CHROME);
