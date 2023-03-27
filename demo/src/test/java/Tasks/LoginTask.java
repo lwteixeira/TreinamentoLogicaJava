@@ -23,5 +23,12 @@ public class LoginTask {
         login.getPassword().sendKeys("secret_sauce");
         login.getButtonLogin().click();
     }
-
+    
+    public void efetuarLoginParametrizado(String user, String password) {
+        loginValidation.validationLoginPage();
+        login.getUserNameInput().sendKeys(user);
+        login.getPassword().sendKeys(password);
+        login.getButtonLogin().click();
+    }
+   
 }
