@@ -16,7 +16,7 @@ public class OverviewValidation {
     }
     
     public void validationTotalPrince(String texto) {
-    	Assertions.assertEquals(texto, overviewPage.getTotalPrince().getText());
+        Assertions.assertEquals(texto, overviewPage.getTotalPrince().getText());
     }
     
     public void validationFinishCompraImg() {
@@ -24,7 +24,7 @@ public class OverviewValidation {
     }
     
     public void validationTextFinish(String texto) {
-    	Assertions.assertEquals(texto, overviewPage.getTextFinishCompra().getText());
+        Assertions.assertEquals(texto, overviewPage.getTextFinishCompra().getText());
     }
     
 }

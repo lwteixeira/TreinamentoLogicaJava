@@ -29,5 +29,16 @@ public class Waits {
         } catch (WebDriverException e) {
             return element;
         }
+        //return element;
+    }
+   
+    
+    
+    public void esperar(){
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            // TODO: handle exception
+        }
     }
 }
