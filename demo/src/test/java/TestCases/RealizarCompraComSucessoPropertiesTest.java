@@ -27,7 +27,7 @@ public class RealizarCompraComSucessoPropertiesTest extends TestBase{
         String password = FileOperation.getProperties("user").getProperty("password");
         loginTask.efetuarLoginParametrizado(user, password);
         productTask.selecionarProduto();
-        checkoutTask.efetuarCheckout();
+        checkoutTask.efetuarCheckout2();
         overviewTask.finalizaCompra();
     }
   //FileOperation.getProperties("user").getProperty("user")

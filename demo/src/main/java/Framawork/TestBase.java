@@ -8,6 +8,7 @@ import org.openqa.selenium.WebDriver;
 import Framawork.Browse.DriverManager;
 import Framawork.Browse.TypeBrowser;
 import Framawork.Utils.FileOperation;
+import Report.Report;
 import io.github.bonigarcia.wdm.webdriver.WebDriverBrowser;
 
 public class TestBase extends DriverManager{
@@ -28,6 +29,7 @@ public class TestBase extends DriverManager{
     
     @AfterEach
     public void finish() {
+        Report.close();
         quitDriver();
     }
 }
